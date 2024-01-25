@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}body{
+    font-family:sans-serif;
+}
+.header{
+    width: 100%;
+    height: 25px;
+    top: 0;
+    z-index: 20;
+}
+.header_content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.img_header{
+    height: 60px;
+    width: 100px;
+    margin: 5px  50px 0 0;
+}
+.ul1,.ul3{
+   list-style: none;
+   margin-top: 30px;
+}
+.ul1 li,.ul3 li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.ul1 li .a_header{
+    text-decoration: none;
+    color: rgb(36, 12, 247);
+    font-weight: bold;
+    position: relative;
+}
+.ul1 li .a_header::after {
+    content:"";
+    position: absolute;
+    left: -3px;
+    top:-3px; 
+    transition:0.2s;
+    border-bottom: 2px solid rgb(36, 12, 247);
+    border-top: 2px solid rgb(36, 12, 247);
+    height: 90%; 
+    width: 100%;
+    visibility: hidden;
+    transform-origin: left;
+    padding: 3px;
+}
+.ul1 li .a_header:hover::after{
+    visibility: visible;
+    transition-delay: .3s; 
+}
+.ul1 li .a_header::before {
+    content:"";
+    position: absolute;
+padding:3px;
+    left: -3px;
+    top:-3px; 
+    transition:0.2s;
+    border-right: 2px solid rgb(36, 12, 247);
+    border-left: 2px solid rgb(36, 12, 247);
+    height: 100%; 
+    width: 97%;
+    visibility: hidden;
+}
+.ul1 li .a_header:hover::before{
+    visibility: visible;
+}
+.ul1_li{
+    position: relative;
+}
+.table_li{
+  position: absolute;
+  width: 450px;
+  border: 2px solid rgb(36, 12, 247);
+  background-color: #f5f2f2;
+  padding: 15px;
+  margin-top: 5px;
+  transform: scale(0);
+  opacity: 0;
+  display: flex;
+}
+.ul2 li .a{
+    color:rgb(36, 12, 247);
+    text-decoration:none;
+    font-size: 15px;
+}
+.ul2 li .aa{
+    line-height: 20px;
+    border-bottom: 1px dotted black;
+}
+ .ul1_li:hover .table_li{
+    transition: 0.5s;
+    opacity: .8;
+    transform: scale(1);
+}
+.ul3 li .ff::after{
+    content: "0";
+    color: white;
+    top:30px;
+    position: absolute;
+    background-color:rgb(36, 12, 247);
+   font-size: 18px;
+   height: 20px;
+   width: 20px;
+   border-radius: 10px;
+   text-align: center;
+}
+.icon{
+    margin-left: 40px;
+}
+
+
+ /* *******************************end header************************************ */
+.section1{
+    width: 100%;
+    height: 80vh;margin-top: 50px;
+}
+.img-sec1{
+    width: 100%;
+    height: 100%;
+}
+/**********************************end section1*********************************/
+

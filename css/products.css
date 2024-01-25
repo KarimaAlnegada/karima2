@@ -1,0 +1,80 @@
+.section3{
+    width: 100%;
+}
+.container_sec3{
+    width: 100%;}
+.list .ul_sec3{
+    display: flex;
+    justify-content: center;
+}
+.list .ul_sec3 li{
+    margin:0px 30px 50px 0;
+    list-style: none;
+}
+.content1_sec3{
+    width: 100%;
+    height:47%;
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 3%;
+}
+.content1_sec3 .div1_sec3,
+.content1_sec3 .div2_sec3,
+.content1_sec3 .div3_sec3{
+    height: 100%;
+    width:30%; 
+    position: relative; 
+}
+.div_img{width: 100%;
+height:77% ;
+margin-bottom: 3%;
+
+}
+.content1_sec3 .div1_sec3 .div_img .overlay1,
+.content1_sec3 .div2_sec3 .div_img .overlay2,
+.content1_sec3 .div3_sec3 .div_img .overlay3{
+    height:80%;
+    width: 100%;
+    opacity: .8;
+    transform:scalex(0);
+    position: absolute;
+   top: 0;
+   left: 0;
+   transition:.5s;
+} 
+.overlay1 .icon_sec3,
+.overlay2 .icon_sec3,
+.overlay3 .icon_sec3{
+    text-align: center;
+    position: absolute;
+   top: 45%; 
+   left: 25%;
+}
+.overlay1 .icon_sec3 .i_sec3,
+.overlay2 .icon_sec3 .i_sec3,
+.overlay3 .icon_sec3 .i_sec3{
+    font-size: 18px;
+    color: rgb(252, 252, 253);
+    height: 35px;
+    width: 35px;
+    background-color:rgb(36, 12, 247);
+    line-height: 35px;
+}
+.content1_sec3 .div1_sec3:hover .div_img .overlay1,
+.content1_sec3 .div2_sec3:hover .div_img .overlay2,
+.content1_sec3 .div3_sec3:hover .div_img .overlay3{
+    transform:scalex(1);
+}
+.div_img .img_sec3{
+    width: 100%;
+    height: 100%;
+}
+.star{
+    width: 100%;
+height:18% ;
+margin-left:20%;
+}
+.star .i_star{
+   color: yellow;
+}
+/* ////////////////////////////////content1_sec3/////////////////////////////////// */
